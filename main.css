@@ -1,33 +1,47 @@
-.box {
-  color: white;
-  font-size: 100px;
-  text-align: center;
-  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
-  padding: 0px
-  /* flex-basis : 150px; */
+/* I need to change the color of first elemet that take the whole row */
+/* ///////////////////////////////////////////////////////////// */
+.calculator-wrapper{
+  width: 400px;
+  
 
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-
-
-  size: 400px;
-  background-color: grey;
-  flex-direction: column 4;
-  padding: 0%;
-  margin: 0%;
+  margin:0 auto;
+  border: 1px solid black;
   
 }
 
-button{
-  /* padding: 0%; */
-  margin: 0%;
+.row {
+  display: flex;
+  justify-content:space-evenly;
+  text-size-adjust: 20px;
+ 
 }
 
-.container1{
-  flex-direction: column;
-  padding: 0px;
+button {
+  width: 24.5%;
+  padding: 48px;
+  
+  border: 1px color(black red green blue);
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+}
+
+.double-width {
+  width: 49%; /* the one percent is for avoid elements overlaping*/
+}
+
+.single-element{
+  width: 99%;
+  background-color: black;
+
+}
+
+.triple-spaces{
+  width: 74.9%; /* I have 4 speaces in  a row,so 3 spaces takes 75 of a row */
+}
+
+button:last-child {
+  background-color: orange; /* Make the last button in each row orange */
+  color: white; /*last child text get white text color */
 
 }
