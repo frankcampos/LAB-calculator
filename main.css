@@ -21,9 +21,10 @@ button {
   width: 24.5%;
   padding: 48px;
   
-  border: 1px color(black red green blue);
+  border: 1px color(black);
   cursor: pointer;
   transition: background-color 0.3s;
+  font-size:larger
 
 }
 
@@ -33,7 +34,8 @@ button {
 
 .single-element{
   width: 99%;
-  background-color: black;
+  background-color: black !important;
+  text-align: right;
 
 }
 
